@@ -6,14 +6,13 @@ function ArtDetails({ artwork, index, onNextClick, onPreviousClick }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Trigger animation when artwork changes
   useEffect(() => {
-    setIsAnimating(true); // Start the animation
+    setIsAnimating(true);
     const timer = setTimeout(() => {
-      setIsAnimating(false); // End the animation smoothly
-    }, 700); // Match the duration with CSS transition time
+      setIsAnimating(false);
+    }, 700);
 
-    return () => clearTimeout(timer); // Clean up timeout
+    return () => clearTimeout(timer);
   }, [artwork]);
 
   return (

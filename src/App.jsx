@@ -5,7 +5,7 @@ import Loader from "./components/Loader";
 import ArtDetails from "./components/ArtDetails";
 
 async function fetchArtworks() {
-  const response = await fetch("./src/data/data.json");
+  const response = await fetch("/data/data.json");
   if (!response.ok) throw new Error("Failed to fetch artworks");
   return await response.json();
 }
@@ -54,7 +54,7 @@ function App() {
     if (isSlideshowActive) {
       slideshowInterval = setInterval(() => {
         handleNextArtwork();
-      }, 3000); // Change artwork every 3 seconds
+      }, 3000);
     }
     return () => clearInterval(slideshowInterval);
   }, [isSlideshowActive, selectedIndex]);
