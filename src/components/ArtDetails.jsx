@@ -39,7 +39,7 @@ function ArtDetails({ artwork, index, onNextClick, onPreviousClick }) {
               className="absolute top-2 left-2 w-6/12 flex bg-black p-4 opacity-80 hover:bg-gray-400/50 hover:opacity-80 transition-opacity duration-300 sm:bottom-2 sm:top-auto lg:bottom-5 sm:w-3/12 lg:w-2/12 cursor-pointer"
             >
               <img
-                src="./src/assets/shared/icon-view-image.svg"
+                src="./assets/shared/icon-view-image.svg"
                 alt="view image"
               />
               <span className="ml-4 text-white text-custom-xxx-s">
