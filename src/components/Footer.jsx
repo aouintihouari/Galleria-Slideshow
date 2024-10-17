@@ -21,7 +21,7 @@ function Footer({ name, artist, onNextClick, onPreviousClick, selectedIndex }) {
             className={`w-4 h-4 mr-10 cursor-pointer hover:opacity-50 lg:w-8 lg:h-8 ${
               selectedIndex === 0 ? "opacity-10 hover:opacity-10" : ""
             }`}
-            src="./src/assets/shared/icon-back-button.svg"
+            src="./assets/shared/icon-back-button.svg"
             alt="Previous"
           />
           <img
@@ -31,7 +31,7 @@ function Footer({ name, artist, onNextClick, onPreviousClick, selectedIndex }) {
                 ? "opacity-10 hover:opacity-10"
                 : ""
             }`}
-            src="./src/assets/shared/icon-next-button.svg"
+            src="./assets/shared/icon-next-button.svg"
             alt="Next"
           />
         </div>
